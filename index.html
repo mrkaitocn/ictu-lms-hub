@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS ICTU Hub - Premium Setup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: #0f172a;
+            color: white;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+            filter: blur(80px);
+            opacity: 0.15;
+            z-index: -1;
+            border-radius: 50%;
+        }
+        .btn-gradient {
+            background: linear-gradient(90deg, #10b981, #3b82f6);
+            transition: all 0.3s ease;
+        }
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+            filter: brightness(1.1);
+        }
+        .step-number {
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+    <div class="blob" style="top: -100px; left: -100px;"></div>
+    <div class="blob" style="bottom: -100px; right: -100px;"></div>
+
+    <div class="max-w-4xl w-full space-y-8 animate-in fade-in duration-1000">
+        <!-- Header -->
+        <div class="text-center space-y-4">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight">
+                LMS <span class="text-emerald-400">ICTU</span> Hub
+            </h1>
+            <p class="text-slate-400 text-lg max-w-xl mx-auto">
+                Hệ thống hỗ trợ học tập thông minh, tự động đồng bộ Cloud và bảo mật tối đa.
+            </p>
+        </div>
+
+        <!-- Setup Cards -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Step 1 -->
+            <div class="glass p-8 rounded-3xl space-y-6 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="text-4xl font-bold step-number">01</div>
+                    <h2 class="text-2xl font-bold">Cài đặt Extension</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Cài đặt Tampermonkey để làm môi trường chạy các tập lệnh hỗ trợ. (Khuyên dùng Chrome/Edge).
+                    </p>
+                </div>
+                <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=vi&pli=1" target="_blank" class="btn-gradient w-full py-4 rounded-2xl font-bold text-center">
+                    📥 Cài Tampermonkey
+                </a>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="glass p-8 rounded-3xl space-y-6 flex flex-col justify-between border-emerald-500/30">
+                <div class="space-y-4">
+                    <div class="text-4xl font-bold step-number">02</div>
+                    <h2 class="text-2xl font-bold">Kích hoạt Script</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Sau khi cài TM, nhấn nút dưới đây để cài đặt <strong>LMS Bypass Cloud</strong>. Tự động nhận diện môn học.
+                    </p>
+                </div>
+                <!-- Người dùng cần thay đường link RAW này sau khi push code lên GitHub -->
+                <a href="YOUR_RAW_SCRIPT_URL_HERE" class="btn-gradient w-full py-4 rounded-2xl font-bold text-center">
+                    ⚡ Cài Đặt Userscript
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="glass p-6 rounded-3xl text-center">
+            <div class="flex items-center justify-center space-x-2 text-amber-400 mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                </svg>
+                <span class="font-bold text-sm uppercase">Lưu ý quan trọng</span>
+            </div>
+            <p class="text-slate-400 text-xs leading-relaxed">
+                Trình duyệt Chrome có thể yêu cầu bật <strong>"Developer Mode"</strong> (Chế độ dành cho nhà phát triển) trong phần quản lý Extension để Userscript hoạt động ổn định nhất.
+            </p>
+        </div>
+
+        <!-- Support -->
+        <div class="text-center">
+            <p class="text-slate-500 text-xs">
+                &copy; 2026 Antigravity ICTU Project. Built for Premium Users.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
