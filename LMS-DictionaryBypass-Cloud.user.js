@@ -20,7 +20,7 @@
 (function() {
     'use strict';
 
-    const DB_URL = "https://pub-6f93058f5a2f4267b3e36e8e18019760.r2.dev/database.json";
+    const DB_URL = "https://pub-f98444025af14a3fa1b7eb84d5476ee3.r2.dev/database.json";
     const DICT_KEY = 'LMS_CLOUD_DB';
     const LAST_SYNC_KEY = 'LMS_CLOUD_LAST_SYNC';
 
